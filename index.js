@@ -1,11 +1,15 @@
-const express= require('express');
+
+const express = require('express');
 const cors=require('cors');
-const html=require('./mail.js')
-const app= express();
+const fs= require('fs');
+const html=require('./mail.js');
+const app = express();
 app.use(cors());
 app.use(express.json());
 const nodemailer = require('nodemailer');
 app.post('/newsletter', (req, res) => {
+    const recievers_name=req.body.name;
+    const recievers_email=req.body.email;
     async function sendEmail() {
         try {
             // Create a transporter object using SMTP transport
@@ -23,8 +27,8 @@ app.post('/newsletter', (req, res) => {
             // Define email content
             const mailOptions = {
                 from: 'support@jdtechnicalsolution.com', // Your Gmail address
-                to:'bittusharma1777@gmail.com',
-                subject: `Your visit to JDTS is worth the time.`,
+                to: `${recievers_email}`,
+                subject: `${recievers_name} welcome to JDTS !`,
                 html: html
             };
 
@@ -46,6 +50,6 @@ app.post('/newsletter', (req, res) => {
 });
 
 
-app.listen(7000,()=>{
+app.listen(7000, () => {
     console.log('listning to posrt number 7000')
 })
