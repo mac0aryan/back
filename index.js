@@ -1,10 +1,9 @@
 const express= require('express');
 const cors=require('cors');
-// const myString=require('mail.js')
+const html=require('mail.js')
 const app= express();
 app.use(cors());
 app.use(express.json());
-const html= `<h1>hello<h1>`;
 const nodemailer = require('nodemailer');
 app.post('/newsletter', (req, res) => {
     async function sendEmail() {
