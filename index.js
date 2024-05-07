@@ -4,7 +4,7 @@ const myString=require('mail.js')
 const app= express();
 app.use(cors());
 app.use(express.json());
-
+const html= myString;
 const nodemailer = require('nodemailer');
 app.post('/newsletter', (req, res) => {
     async function sendEmail() {
@@ -26,7 +26,7 @@ app.post('/newsletter', (req, res) => {
                 from: 'support@jdtechnicalsolution.com', // Your Gmail address
                 to:'bittusharma1777@gmail.com',
                 subject: `Your visit to JDTS is worth the time.`,
-                html: `${myString}`
+                html: html
             };
 
             // Send email
