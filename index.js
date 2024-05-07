@@ -1,6 +1,6 @@
 const express= require('express');
 const cors=require('cors');
-const html=require('mail.js')
+const html=require('./mail.js')
 const app= express();
 app.use(cors());
 app.use(express.json());
