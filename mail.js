@@ -128,15 +128,19 @@ const html=`
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
                           <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                             <td class="icon" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
-                              <img src="https://jdtechnicalsolution.com/static/media/mail2.webp" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: auto; margin: auto; display: block;" width="150" height="auto">
+                              <img src="https://jdtechnicalsolution.com/static/media/mail3.webp" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: auto; margin: auto; display: block;" width="150" height="auto">
                             </td>
                           </tr>
                           <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                             <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                             	<h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Digital Marketing</h3>
                              	<p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-                                    At JD Technical Solution, we are passionate about helping businesses succeed in the digital world. With a team of experienced digital marketers, creative designers, and technical experts, we specialize in delivering customized digital marketing solutions tailored to meet the unique needs and goals of each of our clients.                                </p>
-                            </td>
+				<ul style="list-style:none;">
+				  <li>googleAds</li>
+				  <li>metaAds</li>
+				  <li>SEO</li>
+			       </ul>                            
+	  		</td>
                           </tr>
                         </table>
                       </td>
@@ -151,7 +155,11 @@ const html=`
                             <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                             	<h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Software Development</h3>
                               <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-                                At JD Technical Solution, we are dedicated to crafting exceptional websites that captivate audiences, drive engagement, and deliver results for our clients. With a team of talented designers, developers, and strategists, we specialize in creating custom web solutions tailored to meet the unique goals of our clients.
+			      <ul style="list-style: none;">
+					<li>Basic </li>
+					<li>e-Commerce </li>
+					<li>Automated/Advanced</li>
+			      </ul>
                             </p>
                             </td>
                           </tr>
@@ -163,14 +171,21 @@ const html=`
                           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
                             <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                               <td class="icon" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
-                                <img src="https://jdtechnicalsolution.com/static/media/mail4.jpg" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: 97.99px; margin: auto; display: block;" width="150" height="97.99">
+                                <img src="https://jdtechnicalsolution.com/static/media/mail5.jpg" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: 97.99px; margin: auto; display: block;" width="150" height="97.99">
                               </td>
                             </tr>
                             <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                               <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                                   <h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Software Development</h3>
                                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-                                    At JD Technical Solution, we are a leading software development company dedicated to delivering innovative and high-quality software solutions to businesses of all sizes. With a team of experienced developers, engineers, and project managers, we specialize in creating custom software products that address our clients' unique challenges and drive their success in the digital age.                              </p></td>
+				   	<ul style="list-style:none;">
+						<li>Custom Software Development</li>
+						<li>Cross-Platform App Development</li>
+						<li>DevOps Services</li>
+						<li>UI/UX Design Services</li>
+					</ul>
+       				   </p>
+				   
                             </tr>
                           </table>
                         </td>
@@ -178,14 +193,21 @@ const html=`
                           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
                             <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                               <td class="icon" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
-                                <img src="https://jdtechnicalsolution.com/static/media/mail5.jpg" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: 97.99px; margin: auto; display: block;" width="150" height="97.99">
+                                <img src="https://jdtechnicalsolution.com/static/media/mail6.png" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: 97.99px; margin: auto; display: block;" width="150" height="97.99">
                               </td>
                             </tr>
                             <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                               <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                                   <h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Media Development</h3>
-                                <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-                                    At JD Technical Solution, we are a leading media development company specializing in creating captivating and engaging digital media content for businesses, brands, and organizations. With a team of talented creatives, designers, developers, and storytellers, we are dedicated to delivering innovative and high-quality media solutions that help our clients stand out in today's competitive landscape.                              </p>
+                                <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"> 
+					<ul style="list-style:none;">
+						<li>Amimated Pictures</li>
+						<li>3D Motion</li>
+						<li>Product Design</li>
+						<li>Logo Design</li>
+						<li>Festive Post</li>
+					</ul>
+				</p>
                               </td>
                             </tr>
                           </table>
@@ -289,7 +311,7 @@ const html=`
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
                     <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                       <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding-right: 10px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="left">
-                      	<h3 class="heading" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; margin-top: 0; color: #ffffff; font-size: 20px;">RestoBar</h3>
+                      	<h3 class="heading" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; margin-top: 0; color: #ffffff; font-size: 20px;">JD Technical Solution</h3>
                       	<p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: rgba(255,255,255,.4);">Crush Your Competition Now</p>
                       </td>
                     </tr>
@@ -303,8 +325,12 @@ const html=`
                       	<ul style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; color: rgba(255,255,255,.4);">
 					                <li style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; list-style: none; margin-bottom: 10px;"><span class="text" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">B1 ,Soilder Tower, Commercial Complex
                                         New Delhi, 110018</span></li>
+							<li style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; list-style: none; margin-bottom: 10px;"><span class="text" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"> 7611 W Thomas Rd, Phoenix, AZ, 85022, USA
+                                        </span></li>
 					                <li style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; list-style: none; margin-bottom: 10px;"><span class="text" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">+91 9971979794</span></li>
-					              </ul>
+							<li style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; list-style: none; margin-bottom: 10px;"><span class="text" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">+1-888-821-5749</span></li>
+				              
+		   </ul>
                       </td>
                     </tr>
                   </table>
@@ -336,7 +362,7 @@ const html=`
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
                     <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                       <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding-right: 10px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="left">
-                      	<p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: rgba(255,255,255,.4);">&copy; 2014 jdtechnicalsolution &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All Rights Reserved</p>
+                      	<p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: rgba(255,255,255,.4);">&copy; 2014 JD Technical Solution </br> All Rights Reserved</p>
                       </td>
                     </tr>
                   </table>
