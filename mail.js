@@ -153,7 +153,7 @@ const html=`
                           </tr>
                           <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                             <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
-                            	<h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Software Development</h3>
+                            	<h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Website Development</h3>
                               <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
 			      <ul style="list-style: none;">
 					<li>Basic </li>
