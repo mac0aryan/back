@@ -148,7 +148,7 @@ const html=`
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
                           <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
                             <td class="icon" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
-                              <img src="https://jdtechnicalsolution.com/static/media/mail3.webp" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: 97.99px; margin: auto; display: block;" width="150" height="97.99">
+                              <img src="https://jdtechnicalsolution.com/static/media/mail4.webp" alt style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 150px; max-width: 600px; height: 97.99px; margin: auto; display: block;" width="150" height="97.99">
                             </td>
                           </tr>
                           <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
