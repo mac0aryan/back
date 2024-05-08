@@ -135,11 +135,11 @@ const html=`
                             <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                             	<h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Digital Marketing</h3>
                              	<p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-				<ul style="list-style:none;">
-				  <li>googleAds</li>
-				  <li>metaAds</li>
-				  <li>SEO</li>
-			       </ul>                            
+				<p style="list-style:none;">
+				  <p>googleAds</p>
+				  <p>metaAds</p>
+				  <p>SEO</p>
+			       </p>                            
 	  		</td>
                           </tr>
                         </table>
@@ -155,11 +155,11 @@ const html=`
                             <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                             	<h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Website Development</h3>
                               <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-			      <ul style="list-style: none;">
-					<li>Basic </li>
-					<li>e-Commerce </li>
-					<li>Automated/Advanced</li>
-			      </ul>
+			      <p style="list-style: none;">
+					<p>Basic </p>
+					<p>e-Commerce </p>
+					<p>Automated/Advanced</p>
+			      </p>
                             </p>
                             </td>
                           </tr>
@@ -178,12 +178,12 @@ const html=`
                               <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                                   <h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Software Development</h3>
                                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-				   	<ul style="list-style:none;">
-						<li>Custom Software Development</li>
-						<li>Cross-Platform App Development</li>
-						<li>DevOps Services</li>
-						<li>UI/UX Design Services</li>
-					</ul>
+				   	<p style="list-style:none;">
+						<p>Custom Software Development</p>
+						<p>Cross-Platform App Development</p>
+						<p>DevOps Services</p>
+						<p>UI/UX Design Services</p>
+					</p>
        				   </p>
 				   
                             </tr>
@@ -200,13 +200,13 @@ const html=`
                               <td class="text-services" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 10px 10px 0; text-align: center; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;" align="center">
                                   <h3 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: 'Playfair Display', serif; color: #000000; margin-top: 0; font-size: 20px;">Media Development</h3>
                                 <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"> 
-					<ul style="list-style:none;">
-						<li>Amimated Pictures</li>
-						<li>3D Motion</li>
-						<li>Product Design</li>
-						<li>Logo Design</li>
-						<li>Festive Post</li>
-					</ul>
+					<p style="list-style:none;">
+						<p>Amimated Pictures</p>
+						<p>3D Motion</p>
+						<p>Product Design</p>
+						<p>Logo Design</p>
+						<p>Festive Post</p>
+					</p>
 				</p>
                               </td>
                             </tr>
