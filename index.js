@@ -50,10 +50,14 @@ app.post('/newsletter', (req, res) => {
     sendEmail();
 });
 app.post('/autodialSubscriber', (req, res) => {
-    const firstName=req.body.firstName;
-    const lastName= req.body.lastName;
-    const recievers_name=firstName+" "+lastName;
-    const recievers_email=req.body.email;
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const recievers_name = firstName + " " + lastName;
+    const recievers_phone = req.body.phone;
+    const recievers_employees = req.body.employees;
+    const recievers_users = req.body.users;
+    const recievers_subscribe = req.body.subscribe;
+
     async function sendEmail() {
         try {
             // Create a transporter object using SMTP transport
@@ -68,20 +72,32 @@ app.post('/autodialSubscriber', (req, res) => {
                 requireTLS: true // Force TLS
             });
 
-            // Define email content
-            const mailOptions = {
-                from: 'sales@theautodial.com', // Your Gmail address
+            // Email to the subscriber
+            const mailOptionsToSubscriber = {
+                from: 'sales@theautodial.com',
                 to: `${recievers_email}`,
-                subject: `${recievers_name} Thanks for subscribing!`,
+                subject: `${recievers_name}, Thanks for subscribing!`,
                 html: html2
             };
 
-            // Send email
-            let info = await transporter.sendMail(mailOptions);
+            // Email to you with subscriber details
+            const mailOptionsToYou = {
+                from: 'sales@theautodial.com',
+                to: 'support@theautodial.com', // Replace with your email
+                subject: `New Subscriber: ${recievers_name}`,
+                text: `You have a new subscriber!\n\nName: ${recievers_name}\nEmail: ${recievers_email}\nPhone: ${recievers_phone}\nEmployees: ${recievers_employees}\nUsers: ${recievers_users}\nSubscribe: ${recievers_subscribe?"Subscribed":"Not Subscribed"}`
+            };
 
-            console.log('Email sent successfully!');
-            console.log('Message ID:', info.messageId);
-            res.json({ 'message': "Email sent successfully" });
+            // Send email to subscriber
+            let infoSubscriber = await transporter.sendMail(mailOptionsToSubscriber);
+
+            // Send email to you with subscriber info
+            let infoYou = await transporter.sendMail(mailOptionsToYou);
+
+            // console.log('Emails sent successfully!');
+            // console.log('Subscriber Message ID:', infoSubscriber.messageId);
+            // console.log('Your Message ID:', infoYou.messageId);
+            res.json({ 'message': "Emails sent successfully" });
 
         } catch (error) {
             console.error('Error occurred:', error.message);
@@ -89,9 +105,8 @@ app.post('/autodialSubscriber', (req, res) => {
         }
     }
 
-    // Call the async function to send the email
+    // Call the async function to send the emails
     sendEmail();
-});
 
 
 app.listen(7000, () => {
