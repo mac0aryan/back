@@ -51,7 +51,7 @@ app.post('/newsletter', (req, res) => {
 });
 app.post('/autodialSubscriber', (req, res) => {
     const firstName=req.body.firstName;
-    const lastName= req.bosy.lastName;
+    const lastName= req.body.lastName;
     const recievers_name=firstName+" "+lastName;
     const recievers_email=req.body.email;
     async function sendEmail() {
