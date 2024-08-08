@@ -58,7 +58,7 @@ app.post('/autodialSubscriber', (req, res) => {
         try {
             // Create a transporter object using SMTP transport
             const transporter = nodemailer.createTransport({
-                host: 'smtp.zoho.com',
+                host: 'smtp.zoho.in',
                 port: 465, // SMTP port for Zoho Mail
                 secure: true, // true for 465, false for other ports
                 auth: {
