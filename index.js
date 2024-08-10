@@ -116,14 +116,14 @@ app.post('/autodialNewsletter', (req, res) => {
             const mailOptionsToSubscriber = {
                 from: 'sales@theautodial.com',
                 to: `${recievers_email}`,
-                subject: Thanks for subscribing!`,
+                subject: 'Thanks for subscribing!`,
                 html: html2
             };
 
             const mailOptionsToYou = {
                 from: 'sales@theautodial.com',
                 to: 'support@theautodial.com', // Replace with your email
-                subject: `New Subscriber: ${recievers_name}`,
+                subject: `New Subscriber`,
                 text: `You have a new subscriber! Email: ${recievers_email}`
             };
 
