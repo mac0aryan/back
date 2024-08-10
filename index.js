@@ -97,48 +97,48 @@ app.post('/autodialSubscriber', (req, res) => {
 
     sendEmail();
 });
-app.post('/autodialNewsletter', (req, res) => {
-    const recievers_email = req.body.email;
+app.post('/autodialNewsletter', async (req, res) => {
+    const receiverEmail = req.body.email;
 
-    async function sendEmail() {
-        try {
-            const transporter = nodemailer.createTransport({
-                host: 'smtp.zoho.in',
-                port: 465,
-                secure: true,
-                auth: {
-                    user: 'sales@theautodial.com',
-                    pass: 'Passc0de@2014#TAD'
-                },
-                requireTLS: true
-            });
-
-            const mailOptionsToSubscriber = {
-                from: 'sales@theautodial.com',
-                to: `${recievers_email}`,
-                subject: 'Thanks for subscribing!`,
-                html: html2
-            };
-
-            const mailOptionsToYou = {
-                from: 'sales@theautodial.com',
-                to: 'support@theautodial.com', // Replace with your email
-                subject: `New Subscriber`,
-                text: `You have a new subscriber! Email: ${recievers_email}`
-            };
-
-            let infoSubscriber = await transporter.sendMail(mailOptionsToSubscriber);
-            let infoYou = await transporter.sendMail(mailOptionsToYou);
-
-            res.json({ 'message': "Emails sent successfully" });
-
-        } catch (error) {
-            console.error('Error occurred:', error.message);
-            res.status(500).json({ 'message': 'Error sending mail, please try again' });
-        }
+    if (!receiverEmail) {
+        return res.status(400).json({ message: 'Email is required' });
     }
 
-    sendEmail();
+    try {
+        const transporter = nodemailer.createTransport({
+            host: 'smtp.zoho.in',
+            port: 465,
+            secure: true,
+            auth: {
+                user: 'sales@theautodial.com',
+                pass: 'Passc0de@2014#TAD'
+            },
+            requireTLS: true
+        });
+
+        const mailOptionsToSubscriber = {
+            from: 'sales@theautodial.com',
+            to: receiverEmail,
+            subject: 'Thanks for subscribing!',
+            html: '<p>Thank you for subscribing to our newsletter!</p>' // Example HTML
+        };
+
+        const mailOptionsToYou = {
+            from: 'sales@theautodial.com',
+            to: 'support@theautodial.com', // Replace with your email
+            subject: 'New Subscriber',
+            text: `You have a new subscriber! Email: ${receiverEmail}`
+        };
+
+        await transporter.sendMail(mailOptionsToSubscriber);
+        await transporter.sendMail(mailOptionsToYou);
+
+        res.json({ message: 'Emails sent successfully' });
+
+    } catch (error) {
+        console.error('Error occurred:', error.message);
+        res.status(500).json({ message: 'Error sending mail, please try again' });
+    }
 });
 
 // Ensure the server starts and listens for incoming requests
